@@ -1,0 +1,425 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Web engineering, CMS architecture, digital strategy, and enterprise web solutions portfolio.">
+  <title>Crystal Williams | Web Engineering & Digital Solutions</title>
+
+  <style>
+    :root {
+      --bg: #101820;
+      --surface: #172630;
+      --accent: #45C4B0;
+      --text: #F1F5F4;
+      --muted: #9BAAB3;
+      --border: #30424B;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", sans-serif;
+      line-height: 1.7;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      width: min(1100px, 90%);
+      margin: auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 22px 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-family: monospace;
+      font-size: 20px;
+      font-weight: bold;
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    .nav-links a { color: var(--text); }
+
+    .hero {
+      padding: 110px 0 100px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-family: monospace;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    h1 {
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.15;
+      letter-spacing: -2px;
+      margin: 20px 0;
+      max-width: 900px;
+    }
+
+    .hero p {
+      max-width: 680px;
+      font-size: 19px;
+      color: var(--muted);
+    }
+
+    .buttons {
+      display: flex;
+      gap: 16px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      border: 1px solid var(--accent);
+      border-radius: 6px;
+      font-weight: 600;
+    }
+
+    .button.primary {
+      background: var(--accent);
+      color: var(--bg);
+    }
+
+    section {
+      padding: 75px 0;
+      border-top: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 32px;
+      margin: 0 0 15px;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      max-width: 700px;
+      margin-bottom: 35px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 30px;
+      transition: transform .2s, border-color .2s;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+
+    .card h3 {
+      margin: 10px 0;
+      font-size: 22px;
+    }
+
+    .card p { color: var(--muted); }
+
+    .label {
+      color: var(--accent);
+      font-family: monospace;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 22px 0;
+    }
+
+    .tag {
+      font-family: monospace;
+      font-size: 12px;
+      border: 1px solid var(--border);
+      padding: 5px 9px;
+      border-radius: 4px;
+      color: var(--muted);
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+    }
+
+    .skills h3 { color: var(--accent); }
+
+    .skills p { color: var(--muted); }
+
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 35px 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      .hero { padding: 70px 0; }
+      .projects, .skills { grid-template-columns: 1fr; }
+      section { padding: 55px 0; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .card { transition: none; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="logo" href="#home">&lt;cw /&gt;</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+
+    <div class="container hero">
+      <div class="eyebrow">Web Engineering // Digital Strategy</div>
+
+      <h1>Building digital experiences that work beyond the interface.</h1>
+
+      <p>
+        I'm Crystal Williams, a senior web solutions developer
+        specializing in enterprise web platforms, CMS architecture,
+        integrations, and digital experience optimization.
+      </p>
+
+      <p>
+        I connect technology, content, and business objectives
+        to build scalable, maintainable solutions.
+      </p>
+
+      <div class="buttons">
+        <a class="button primary" href="#projects">Explore My Work</a>
+        <a class="button" href="#contact">Get in Touch</a>
+      </div>
+    </div>
+
+    <section id="about">
+      <div class="container">
+        <div class="eyebrow">01 / About</div>
+        <h2>Engineering with purpose.</h2>
+        <p class="section-intro">
+          With more than a decade of experience in enterprise
+          web development, I work at the intersection of
+          software engineering, content strategy, and marketing
+          technology. My focus is on solving complex technical
+          challenges while delivering practical business value.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="container">
+        <div class="eyebrow">02 / Selected Work</div>
+        <h2>Featured Projects</h2>
+        <p class="section-intro">
+          A selection of enterprise web platforms, content
+          architectures, and digital experiences I've helped build.
+        </p>
+
+        <div class="projects">
+
+          <article class="card">
+            <div class="label">Digital Experience / CMS</div>
+            <h3>Tealium — Resource Center & Demo Hub</h3>
+            <p>
+              Structured content architecture, custom WordPress
+              functionality, dynamic filtering, and reusable
+              digital experience components.
+            </p>
+            <div class="tags">
+              <span class="tag">WordPress</span>
+              <span class="tag">PHP</span>
+              <span class="tag">ACF</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <a href="https://tealium.com/"
+               target="_blank" rel="noopener noreferrer">
+              Visit Website &rarr;
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="label">Enterprise Web Engineering</div>
+            <h3>ICW Group — Corporate Web Platform</h3>
+            <p>
+              Enterprise WordPress development, custom integrations,
+              content architecture, deployment workflows,
+              and technical SEO.
+            </p>
+            <div class="tags">
+              <span class="tag">WordPress</span>
+              <span class="tag">AWS</span>
+              <span class="tag">PHP</span>
+              <span class="tag">GitHub</span>
+            </div>
+            <a href="https://www.icwgroup.com/"
+               target="_blank" rel="noopener noreferrer">
+              Visit Website &rarr;
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="label">Enterprise Web / MarTech</div>
+            <h3>ScienceLogic — Corporate Website</h3>
+            <p>
+              Enterprise website development, content management,
+              marketing technology integrations, and digital
+              experience optimization.
+            </p>
+            <div class="tags">
+              <span class="tag">WordPress</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Analytics</span>
+              <span class="tag">MarTech</span>
+            </div>
+            <a href="https://sciencelogic.com/"
+               target="_blank" rel="noopener noreferrer">
+              Visit Website &rarr;
+            </a>
+          </article>
+
+          <article class="card">
+            <div class="label">Frontend / Technical Documentation</div>
+            <h3>Tealium — Documentation Platform</h3>
+            <p>
+              Theme enhancements, complex content rendering,
+              frontend troubleshooting, and improvements to
+              documentation presentation.
+            </p>
+            <div class="tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Git</span>
+            </div>
+            <a href="https://docs.tealium.com/"
+               target="_blank" rel="noopener noreferrer">
+              Visit Documentation &rarr;
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise">
+      <div class="container">
+        <div class="eyebrow">03 / Technical Expertise</div>
+        <h2>What I Work With</h2>
+
+        <div class="skills">
+          <div>
+            <h3>Web Engineering</h3>
+            <p>
+              PHP, JavaScript, HTML, CSS, REST APIs,
+              custom integrations, frontend development,
+              and application troubleshooting.
+            </p>
+          </div>
+
+          <div>
+            <h3>CMS & Platforms</h3>
+            <p>
+              WordPress, Webflow, SharePoint,
+              Advanced Custom Fields, Elementor,
+              and enterprise content architecture.
+            </p>
+          </div>
+
+          <div>
+            <h3>Digital Experience</h3>
+            <p>
+              Technical SEO, GA4, analytics,
+              marketing automation, content strategy,
+              conversion optimization, and MarTech.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="eyebrow">04 / Connect</div>
+        <h2>Let's build something that works.</h2>
+        <p class="section-intro">
+          Interested in enterprise web engineering,
+          digital experience consulting, or technical collaboration?
+        </p>
+        <a class="button primary"
+           href="https://github.com/tonka717"
+           target="_blank" rel="noopener noreferrer">
+          View My GitHub
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      &copy; <span id="year">2026</span> Crystal Williams.
+      Built with HTML &amp; CSS. Hosted on GitHub Pages.
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
