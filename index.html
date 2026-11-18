@@ -1,14 +1,15 @@
-
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Web engineering, CMS architecture, digital strategy, and enterprise web solutions portfolio.">
-  <title>Crystal Williams | Web Engineering & Digital Solutions</title>
-
-  <style>
-    :root {
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Crystal Williams — systems thinker, digital strategist, marketer and software engineer connecting people, ideas and technology to create meaningful change." name="description"/>
+<title>
+   Crystal Williams | Strategy, Systems Thinking &amp; Engineering
+  </title>
+<style>
+   :root {
       --bg: #101820;
       --surface: #172630;
       --accent: #45C4B0;
@@ -205,222 +206,300 @@
       html { scroll-behavior: auto; }
       .card { transition: none; }
     }
-  </style>
+  
+.hero h1 { max-width: 1000px; }
+.manifesto { font-size: 22px; color: var(--text); max-width: 800px; }
+.copy { max-width: 800px; color: var(--muted); }
+.copy strong { color: var(--text); }
+.skills { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.card .label { display:block; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+@media(max-width:700px){ .skills {grid-template-columns:1fr;} }
+  
+.case h4 { font-size: 14px; color: var(--accent); margin: 20px 0 4px; }
+.case p { margin: 0 0 12px; }
+
+.recognition-strip { display:flex; flex-wrap:wrap; gap:12px 24px; margin-top:38px; padding-top:24px; border-top:1px solid var(--border); font-size:14px; } .recognition-strip a { color:var(--text); }
+</style>
 </head>
-
 <body>
-
-  <header>
-    <nav class="container" aria-label="Main navigation">
-      <a class="logo" href="#home">&lt;cw /&gt;</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
-  </header>
-
-  <main id="home">
-
-    <div class="container hero">
-      <div class="eyebrow">Web Engineering // Digital Strategy</div>
-
-      <h1>Building digital experiences that work beyond the interface.</h1>
-
-      <p>
-        I'm Crystal Williams, a senior web solutions developer
-        specializing in enterprise web platforms, CMS architecture,
-        integrations, and digital experience optimization.
-      </p>
-
-      <p>
-        I connect technology, content, and business objectives
-        to build scalable, maintainable solutions.
-      </p>
-
-      <div class="buttons">
-        <a class="button primary" href="#projects">Explore My Work</a>
-        <a class="button" href="#contact">Get in Touch</a>
-      </div>
+<header>
+<nav aria-label="Main navigation" class="container">
+<a class="logo" href="#home">
+     &lt;cw /&gt;
+    </a>
+<div class="nav-links">
+<a href="#about">
+      My Story
+     </a>
+<a href="#projects">
+      Impact
+     </a><a href="#built">Things I’ve Built</a>
+<a href="#expertise">
+      Expertise
+     </a>
+<a href="#milestones">Recognition</a>
+<a href="#perspectives">
+      Perspectives
+     </a>
+<a href="#contact">
+      Connect
+     </a>
+</div>
+</nav>
+</header>
+<main id="home">
+<div class="container hero">
+<div class="eyebrow">
+     Strategist // Systems Thinker // Engineer // Human
     </div>
-
-    <section id="about">
-      <div class="container">
-        <div class="eyebrow">01 / About</div>
-        <h2>Engineering with purpose.</h2>
-        <p class="section-intro">
-          With more than a decade of experience in enterprise
-          web development, I work at the intersection of
-          software engineering, content strategy, and marketing
-          technology. My focus is on solving complex technical
-          challenges while delivering practical business value.
-        </p>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <div class="eyebrow">02 / Selected Work</div>
-        <h2>Featured Projects</h2>
-        <p class="section-intro">
-          A selection of enterprise web platforms, content
-          architectures, and digital experiences I've helped build.
-        </p>
-
-        <div class="projects">
-
-          <article class="card">
-            <div class="label">Digital Experience / CMS</div>
-            <h3>Tealium — Resource Center & Demo Hub</h3>
-            <p>
-              Structured content architecture, custom WordPress
-              functionality, dynamic filtering, and reusable
-              digital experience components.
-            </p>
-            <div class="tags">
-              <span class="tag">WordPress</span>
-              <span class="tag">PHP</span>
-              <span class="tag">ACF</span>
-              <span class="tag">JavaScript</span>
-            </div>
-            <a href="https://tealium.com/"
-               target="_blank" rel="noopener noreferrer">
-              Visit Website &rarr;
-            </a>
-          </article>
-
-          <article class="card">
-            <div class="label">Enterprise Web Engineering</div>
-            <h3>ICW Group — Corporate Web Platform</h3>
-            <p>
-              Enterprise WordPress development, custom integrations,
-              content architecture, deployment workflows,
-              and technical SEO.
-            </p>
-            <div class="tags">
-              <span class="tag">WordPress</span>
-              <span class="tag">AWS</span>
-              <span class="tag">PHP</span>
-              <span class="tag">GitHub</span>
-            </div>
-            <a href="https://www.icwgroup.com/"
-               target="_blank" rel="noopener noreferrer">
-              Visit Website &rarr;
-            </a>
-          </article>
-
-          <article class="card">
-            <div class="label">Enterprise Web / MarTech</div>
-            <h3>ScienceLogic — Corporate Website</h3>
-            <p>
-              Enterprise website development, content management,
-              marketing technology integrations, and digital
-              experience optimization.
-            </p>
-            <div class="tags">
-              <span class="tag">WordPress</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">Analytics</span>
-              <span class="tag">MarTech</span>
-            </div>
-            <a href="https://sciencelogic.com/"
-               target="_blank" rel="noopener noreferrer">
-              Visit Website &rarr;
-            </a>
-          </article>
-
-          <article class="card">
-            <div class="label">Frontend / Technical Documentation</div>
-            <h3>Tealium — Documentation Platform</h3>
-            <p>
-              Theme enhancements, complex content rendering,
-              frontend troubleshooting, and improvements to
-              documentation presentation.
-            </p>
-            <div class="tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">Git</span>
-            </div>
-            <a href="https://docs.tealium.com/"
-               target="_blank" rel="noopener noreferrer">
-              Visit Documentation &rarr;
-            </a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="expertise">
-      <div class="container">
-        <div class="eyebrow">03 / Technical Expertise</div>
-        <h2>What I Work With</h2>
-
-        <div class="skills">
-          <div>
-            <h3>Web Engineering</h3>
-            <p>
-              PHP, JavaScript, HTML, CSS, REST APIs,
-              custom integrations, frontend development,
-              and application troubleshooting.
-            </p>
-          </div>
-
-          <div>
-            <h3>CMS & Platforms</h3>
-            <p>
-              WordPress, Webflow, SharePoint,
-              Advanced Custom Fields, Elementor,
-              and enterprise content architecture.
-            </p>
-          </div>
-
-          <div>
-            <h3>Digital Experience</h3>
-            <p>
-              Technical SEO, GA4, analytics,
-              marketing automation, content strategy,
-              conversion optimization, and MarTech.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="eyebrow">04 / Connect</div>
-        <h2>Let's build something that works.</h2>
-        <p class="section-intro">
-          Interested in enterprise web engineering,
-          digital experience consulting, or technical collaboration?
-        </p>
-        <a class="button primary"
-           href="https://github.com/tonka717"
-           target="_blank" rel="noopener noreferrer">
-          View My GitHub
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container">
-      &copy; <span id="year">2026</span> Crystal Williams.
-      Built with HTML &amp; CSS. Hosted on GitHub Pages.
+<h1>
+     I want to change the world. I just happen to know how to code.
+    </h1>
+<p>
+     I'm Crystal Williams — a strategist, software engineer, entrepreneur, creative thinker and relentlessly curious problem-solver.
+    </p>
+<p>
+     I connect people, ideas, technology and business to solve complex problems and create meaningful change.
+    </p>
+<p>
+     Sometimes the answer is technology. Sometimes it's a better process, a different perspective, a creative idea or simply asking the question nobody else has thought to ask.
+    </p>
+<p>
+     I believe the best solutions aren't always the most sophisticated. They're the ones that make things better.
+    </p>
+<div class="manifesto">
+     Challenge Convention. Connect the Dots. Create Change.
     </div>
-  </footer>
-
-  <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
+<div class="buttons">
+<a class="button primary" href="#projects">
+      Explore My Work
+     </a>
+<a class="button" href="#about">
+      Get to Know Me
+     </a>
+</div>
+<div class="recognition-strip"><a href="#milestones">Top 25 Women in Business</a><a href="#milestones">Forty Under 40</a><a href="#milestones">50 Most Influential Women</a><a href="#milestones">Top Women of the Channel</a></div></div>
+<section id="about">
+<div class="container">
+<div class="eyebrow">01 / My Story</div>
+<h2>
+      Curiosity is my superpower.
+     </h2>
+<div class="copy">
+<p>
+       I've spent more than two decades exploring how people, businesses, technology and ideas work together — and what happens when they don't.
+      </p>
+<p>
+       My career hasn't followed a traditional path, and I'm grateful for that. From military service, healthcare and entrepreneurship to marketing strategy and enterprise software engineering, every experience has shaped how I see the world.
+      </p>
+<p>
+       I've worked with government agencies, global technology companies, large enterprises, universities and small businesses. Regardless of the industry, I find myself asking the same questions:
+      </p>
+<p class="manifesto">
+       Why are we doing it this way? Who are we solving this for? What are we missing? And how can we make it better?
+      </p>
+<p>
+       I'm equally comfortable discussing brand strategy, analyzing business processes, designing digital experiences, architecting enterprise solutions or sitting down and writing code.
+      </p>
+<p>
+       I'm passionate about emerging technology, but I don't believe technology is the answer to everything. I believe in human creativity, collaboration, critical thinking and the extraordinary things people can accomplish when given the right tools and opportunities.
+      </p>
+<p>
+       I'm not afraid to challenge assumptions, admit what I don't know or ask the seemingly obvious question.
+      </p>
+<p>
+       I want to leave things better than I found them. And if I can change a little piece of the world along the way, even better.
+      </p>
+</div>
+</div>
+</section>
+<section id="projects">
+<div class="container">
+<div class="eyebrow">02 / Making an Impact</div>
+<h2>Real problems. Thoughtful solutions.</h2><p class="section-intro">Selected examples of how I bring business strategy, marketing and engineering together. Company names are withheld to keep the focus on the work.</p>
+<h3>Signature projects</h3><p class="section-intro">From enterprise trust and product marketing to digital workplace transformation, healthcare, public service and community connection.</p><div class="projects"><article class="card"><div class="label">Enterprise AI &amp; IT operations company</div><h3>Enterprise Trust Center</h3><p>Built an entire Trust Center to provide a centralized digital destination for customer trust and assurance information.</p><div class="tags"><span class="tag">Customer trust</span><span class="tag">Security communications</span><span class="tag">B2B marketing</span></div></article><article class="card"><div class="label">Enterprise AI &amp; IT operations company</div><h3>Interactive AIOps Calculator</h3><p>Built an AIOps calculator that translates a complex technology offering into an interactive decision-support experience.</p><div class="tags"><span class="tag">Product marketing</span><span class="tag">Interactive tools</span><span class="tag">Sales enablement</span></div></article><article class="card"><div class="label">State healthcare marketplace</div><h3>Affordable Healthcare Website</h3><p>Played an instrumental role in redeveloping a state affordable healthcare website, supporting the delivery of public-facing healthcare information.</p><div class="tags"><span class="tag">Public service</span><span class="tag">Healthcare</span><span class="tag">Digital experience</span></div></article><article class="card"><div class="label">Military community initiative</div><h3>Women’s Mentoring Platform</h3><p>Built a platform for a military community initiative to connect women through mentorship.</p><div class="tags"><span class="tag">Community building</span><span class="tag">Mentorship</span><span class="tag">Social impact</span></div></article><article class="card"><div class="label">Military spouse professional association</div><h3>Professional Membership Website</h3><p>Built a membership website for a network of military spouse legal professionals, supporting membership and community connection.</p><div class="tags"><span class="tag">Membership platforms</span><span class="tag">Professional communities</span><span class="tag">Nonprofit</span></div></article><article class="card"><div class="label">Federal government agency</div><h3>Public-Facing Government Website Templates</h3><p>Developed the majority of the page templates used on a federal mint website, providing reusable foundations for public-facing content.</p><div class="tags"><span class="tag">Government</span><span class="tag">Reusable templates</span><span class="tag">Web engineering</span></div></article><article class="card"><div class="label">Major hospital / Healthcare enterprise</div><h3>Microsoft 365 Implementation &amp; Governance</h3><p>Established a governance plan and implemented Microsoft 365 at a major hospital, bringing together technology deployment and the organizational framework needed to manage the platform.</p><div class="tags"><span class="tag">Microsoft 365</span><span class="tag">Enterprise governance</span><span class="tag">Healthcare</span><span class="tag">Digital workplace</span></div></article><article class="card"><div class="label">National insurance enterprise</div><h3>Enterprise Intranet Migration to Microsoft 365</h3><p>Migrated a legacy employee portal to Microsoft 365, modernizing the internal digital workplace and providing a foundation for employee collaboration and information access.</p><div class="tags"><span class="tag">Microsoft 365</span><span class="tag">Intranet migration</span><span class="tag">Digital workplace</span><span class="tag">Enterprise modernization</span></div></article></div><h3 style="margin-top: 48px">More problems I’ve solved</h3><div class="projects"><article class="card case"><div class="label">Global enterprise SaaS company</div><h3>Making resources easier to discover</h3><h4>The challenge</h4><p>A growing content library needed to serve different audiences without requiring editors to maintain separate experiences manually.</p><h4>My contribution</h4><p>Designed structured resource and demo content models, dynamic filters and reusable components organized around products, topics, personas and buying stages.</p><h4>Value &amp; status</h4><p>A reusable foundation for customer discovery and marketing campaigns.</p><div class="tags"><span class="tag">Content strategy</span><span class="tag">Customer journeys</span><span class="tag">WordPress</span><span class="tag">ACF</span></div></article><article class="card case"><div class="label">Global enterprise SaaS company</div><h3>Turning content data into decisions</h3><h4>The challenge</h4><p>Marketing needed a defensible way to decide which pages to retain, review or retire.</p><h4>My contribution</h4><p>Combined GA4, Search Console and CMS exports; developed a bulk triage tool covering 698 pages and a broken-link checking script.</p><h4>Value &amp; status</h4><p>A repeatable, evidence-based content audit rather than a manual page-by-page review.</p><div class="tags"><span class="tag">SEO</span><span class="tag">Analytics</span><span class="tag">Content governance</span><span class="tag">Automation</span></div></article><article class="card case"><div class="label">National insurance enterprise</div><h3>Modernizing content without losing editorial control</h3><h4>The challenge</h4><p>A legacy article structure made publishing and navigation harder to maintain.</p><h4>My contribution</h4><p>Migrated articles from a custom post type to a tag-based architecture, with a consistent URL structure and tag archives.</p><h4>Value &amp; status</h4><p>A more coherent publishing model for a library of approximately 350 published articles.</p><div class="tags"><span class="tag">Information architecture</span><span class="tag">CMS</span><span class="tag">SEO</span></div></article><article class="card case"><div class="label">National insurance enterprise</div><h3>Reducing risk across the digital ecosystem</h3><h4>The challenge</h4><p>Public-facing platforms need to balance marketing independence with security and operational resilience.</p><h4>My contribution</h4><p>Contributed to incident remediation and proposed improvements to plugin governance, development environments, monitoring and data handling.</p><h4>Value &amp; status</h4><p>Remediation work and a modernization roadmap; proposed changes are not represented as delivered.</p><div class="tags"><span class="tag">Security</span><span class="tag">Governance</span><span class="tag">AWS</span><span class="tag">DevOps</span></div></article><article class="card case"><div class="label">Enterprise AI &amp; IT operations company</div><h3>Connecting marketing and engineering</h3><h4>The challenge</h4><p>Global marketing needs web experiences that support campaigns, product launches and measurable engagement.</p><h4>My contribution</h4><p>Developed and maintained enterprise web experiences, supported marketing technology integrations, and collaborated with product and marketing stakeholders.</p><h4>Value &amp; status</h4><p>A connected approach to campaign delivery, content and digital experience.</p><div class="tags"><span class="tag">B2B marketing</span><span class="tag">MarTech</span><span class="tag">Web strategy</span></div></article><article class="card case"><div class="label">Global technology company</div><h3>Making technical knowledge easier to consume</h3><h4>The challenge</h4><p>Complex documentation structures created rendering and formatting challenges.</p><h4>My contribution</h4><p>Developed theme enhancements and fixes for nested tables and content matching in a technical documentation platform.</p><h4>Value &amp; status</h4><p>More reliable presentation of complex technical information.</p><div class="tags"><span class="tag">Documentation</span><span class="tag">Frontend</span><span class="tag">Git</span></div></article><article class="card case"><div class="label">Enterprise &amp; government organizations</div><h3>Improving how people work</h3><h4>The challenge</h4><p>Teams need accessible information and practical collaboration tools.</p><h4>My contribution</h4><p>Developed and supported enterprise web and collaboration solutions using SharePoint, Microsoft 365 and related automation tools.</p><h4>Value &amp; status</h4><p>Solutions grounded in business workflows and user needs.</p><div class="tags"><span class="tag">Collaboration</span><span class="tag">Power Platform</span><span class="tag">Process improvement</span></div></article></div>
+</div>
+</section><section id="built"><div class="container"><div class="eyebrow">03 / Things I’ve Built</div><h2>Ideas are great. Making them real is even better.</h2><p class="section-intro">A closer look at the tools, systems and experiences I have personally developed or helped bring to life.</p><div class="projects"><article class="card"><h3>Design token generation pipeline</h3><p>Built a pipeline that generates CSS, JavaScript and an HTML reference from one JSON token source, reducing the need to maintain separate design definitions.</p><div class="tags"><span class="tag">Style Dictionary</span><span class="tag">JSON</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div></article><article class="card"><h3>Reusable digital experience components</h3><p>Developed shared utility classes and reusable content components for alternating layouts, grids and consistent visual treatments.</p><div class="tags"><span class="tag">CSS</span><span class="tag">WordPress</span><span class="tag">Design systems</span></div></article><article class="card"><h3>Content audit &amp; triage toolkit</h3><p>Built a bulk review tool and prepared a 404-checking script to support evidence-based decisions across a 698-page content inventory.</p><div class="tags"><span class="tag">Analytics</span><span class="tag">SEO</span><span class="tag">Automation</span></div></article><article class="card"><h3>Resource Center &amp; Demo Hub</h3><p>Designed and developed structured content models and discovery experiences for resources and live, recorded and self-guided demos.</p><div class="tags"><span class="tag">PHP</span><span class="tag">ACF</span><span class="tag">JavaScript</span></div></article><article class="card"><h3>Local development environment</h3><p>Established a local WordPress development workflow using Docker and Lando within enterprise constraints.</p><div class="tags"><span class="tag">Docker</span><span class="tag">Lando</span><span class="tag">Developer experience</span></div></article><article class="card"><h3>Cloud-hosted download routing</h3><p>Implemented and merged proxy-routing changes for a download library to use CloudFront; final staging approval was pending in the last known update.</p><div class="tags"><span class="tag">AWS</span><span class="tag">CloudFront</span><span class="tag">Git</span></div></article></div></div></section>
+<section id="expertise">
+<div class="container">
+<div class="eyebrow">04 / Expertise</div>
+<h2>
+      More than a toolkit.
+     </h2>
+<p class="section-intro">
+      The disciplines I draw on to solve the right problem, not just the technical one.
+     </p>
+<div class="skills">
+<div>
+<h3>
+        Business &amp; Innovation
+       </h3>
+<p>
+        Systems thinking, strategic planning, process improvement, digital transformation.
+       </p>
+</div>
+<div>
+<h3>
+        Marketing &amp; Growth
+       </h3>
+<p>
+        B2B marketing, brand strategy, lead generation, demand generation and campaign enablement.
+       </p>
+</div>
+<div>
+<h3>
+        Creative &amp; Digital Experience
+       </h3>
+<p>
+        Storytelling, user experience, content strategy, customer journeys and design systems.
+       </p>
+</div>
+<div>
+<h3>
+        Engineering &amp; Architecture
+       </h3>
+<p>
+        Enterprise platforms, PHP, JavaScript, REST APIs, cloud environments, CMS architecture and integrations.
+       </p>
+</div>
+<div>
+<h3>
+        Data &amp; Intelligence
+       </h3>
+<p>
+        Analytics, customer data platforms, SEO and conversion optimization.
+       </p>
+</div>
+<div>
+<h3>
+        AI &amp; Emerging Technology
+       </h3>
+<p>
+        AI-assisted development, automation and human enablement.
+       </p>
+</div>
+<div>
+<h3>
+        People &amp; Operations
+       </h3>
+<p>
+        Knowledge management, collaboration, governance and cross-functional alignment.
+       </p>
+</div>
+</div>
+</div>
+</section>
+<section id="milestones">
+<div class="container">
+<div class="eyebrow">05 / Recognition &amp; Leadership</div>
+<h2>Recognition, leadership &amp; service.</h2>
+<p class="section-intro">Recognition for my work in business, technology and community leadership — and the causes that remind me why the work matters.</p><div class="projects"><article class="card"><div class="label">Charlotte Business Journal / June 2013</div><h3>Top 25 Women in Business</h3><p>Recognized among 25 regional businesswomen for contributions to their professions and communities.</p></article><article class="card"><div class="label">CRN Magazine / June 2013</div><h3>Top Women of the Channel</h3><p>Recognized nationally among 295 women in the technology channel for expertise and vision.</p></article><article class="card"><div class="label">The Mecklenburg Times / April 2013</div><h3>50 Most Influential Women</h3><p>Recognized among influential women across business, government, education and nonprofit organizations in the Charlotte region.</p><a href="http://mecktimes.com/50-most-influential-women-2013/">Award feature →</a></article><article class="card"><div class="label">Charlotte Business Journal / January 2013</div><h3>Forty Under 40</h3><p>Recognized for professional accomplishments as an emerging business leader in Charlotte.</p></article></div><h3 style="margin-top:40px">Beyond the awards</h3><div class="projects"><article class="card"><div class="label">Media / Entrepreneurship</div><h3>Women With Know How</h3><p>Featured in Women With Know How, highlighting my journey as a woman in business.</p></article><article class="card"><div class="label">Advocacy / Military community</div><h3>Women Joining Forces</h3><p>Worked with Michelle Obama through Business and Professional Women (BPW) and Women Joining Forces, and built a mentoring platform to help women connect.</p></article></div><h3 style="margin-top:40px">Board leadership &amp; community service</h3>
+<div class="projects">
+<article class="card"><div class="label">Higher education / Board of Directors</div><h3>UNC Charlotte Athletic Foundation</h3><p>Served on the Board of Directors, contributing to the leadership of an organization supporting collegiate athletics and student-athletes.</p></article>
+<article class="card"><div class="label">Military community / Board of Directors</div><h3>NC Military Business Organization</h3><p>Served on the Board of Directors, bringing my perspective as an Army veteran and entrepreneur to an organization focused on the military business community.</p></article>
+</div>
+<h3 style="margin-top:40px">The experiences behind the work</h3><div class="skills">
+<div>
+<h3>
+        Military Service
+       </h3>
+<p>
+        U.S. Army veteran.
+       </p>
+</div>
+<div>
+<h3>
+        Entrepreneurship
+       </h3>
+<p>
+        Founder and principal consultant of a veteran- and woman-owned business.
+       </p>
+</div>
+<div>
+<h3>
+        Professional Development
+       </h3>
+<p>
+        Program Management for IT Professionals and Project Management Foundations.
+       </p>
+</div>
+<div>
+<h3>
+        Healthcare Roots
+       </h3>
+<p>
+        Ophthalmic technician training at Johns Hopkins University.
+       </p>
+</div>
+</div>
+</div>
+</section>
+<section id="perspectives">
+<div class="container">
+<div class="eyebrow">06 / Perspectives</div>
+<h2>
+      A few things I believe.
+     </h2>
+<div class="copy">
+<p class="manifesto">
+       Technology should empower people, not diminish them.
+      </p>
+<p class="manifesto">
+       Innovation doesn't always require invention. Sometimes it requires simplification.
+      </p>
+<p class="manifesto">
+       Creativity is not a problem artificial intelligence needs to solve.
+      </p>
+<p class="manifesto">
+       The best ideas don't always come from the person with the highest title.
+      </p>
+<p class="manifesto">
+       A good question can be more valuable than a thousand lines of code.
+      </p>
+<p class="manifesto">
+       Never confuse complexity with intelligence.
+      </p>
+<p class="manifesto">
+       Success should be measured by what we make better, not just what we make.
+      </p>
+<p class="manifesto">
+       And yes, I still believe we can change the world.
+      </p>
+</div>
+</div>
+</section>
+<section id="contact">
+<div class="container">
+<div class="eyebrow">07 / Connect</div>
+<h2>
+      Let's make something better.
+     </h2>
+<p class="section-intro">
+      Have a complex problem, a bold idea or a mission worth pursuing? I'd love to connect with people who believe we can make a meaningful difference.
+     </p>
+<div class="buttons">
+<a class="button primary" href="https://www.linkedin.com/in/williamscrystal/" rel="noopener noreferrer" target="_blank">
+       Connect on LinkedIn
+      </a>
+<a class="button" href="https://github.com/tonka717" rel="noopener noreferrer" target="_blank">
+       View My GitHub
+      </a>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="container">
+    ©
+    <span id="year">
+     2026
+    </span>
+    Crystal Williams. Built with curiosity and code.
+   </div>
+</footer>
+<script>
+   document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-
 </body>
 </html>
-
