@@ -1,14 +1,14 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Web engineering, CMS architecture, digital strategy, and enterprise web solutions portfolio.">
-  <title>Crystal Williams | Web Engineering & Digital Solutions</title>
-
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="Crystal Williams &mdash; systems thinker, digital strategist, marketer and software engineer connecting people, ideas and technology to create meaningful change." name="description"/>
+  <title>
+   Crystal Williams | Strategy, Systems Thinking &amp; Engineering
+  </title>
   <style>
-    :root {
+   :root {
       --bg: #101820;
       --surface: #172630;
       --accent: #45C4B0;
@@ -205,222 +205,451 @@
       html { scroll-behavior: auto; }
       .card { transition: none; }
     }
+  
+.hero h1 { max-width: 1000px; }
+.manifesto { font-size: 22px; color: var(--text); max-width: 800px; }
+.copy { max-width: 800px; color: var(--muted); }
+.copy strong { color: var(--text); }
+.skills { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.card .label { display:block; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+@media(max-width:700px){ .skills {grid-template-columns:1fr;} }
   </style>
-</head>
-
-<body>
-
+ </head>
+ <body>
   <header>
-    <nav class="container" aria-label="Main navigation">
-      <a class="logo" href="#home">&lt;cw /&gt;</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+   <nav aria-label="Main navigation" class="container">
+    <a class="logo" href="#home">
+     &lt;cw /&gt;
+    </a>
+    <div class="nav-links">
+     <a href="#about">
+      My Story
+     </a>
+     <a href="#projects">
+      Impact
+     </a>
+     <a href="#expertise">
+      Expertise
+     </a>
+     <a href="#milestones">
+      Milestones
+     </a>
+     <a href="#perspectives">
+      Perspectives
+     </a>
+     <a href="#contact">
+      Connect
+     </a>
+    </div>
+   </nav>
   </header>
-
   <main id="home">
-
-    <div class="container hero">
-      <div class="eyebrow">Web Engineering // Digital Strategy</div>
-
-      <h1>Building digital experiences that work beyond the interface.</h1>
-
-      <p>
-        I'm Crystal Williams, a senior web solutions developer
-        specializing in enterprise web platforms, CMS architecture,
-        integrations, and digital experience optimization.
-      </p>
-
-      <p>
-        I connect technology, content, and business objectives
-        to build scalable, maintainable solutions.
-      </p>
-
-      <div class="buttons">
-        <a class="button primary" href="#projects">Explore My Work</a>
-        <a class="button" href="#contact">Get in Touch</a>
-      </div>
+   <div class="container hero">
+    <div class="eyebrow">
+     Strategist // Systems Thinker // Engineer // Human
     </div>
-
-    <section id="about">
-      <div class="container">
-        <div class="eyebrow">01 / About</div>
-        <h2>Engineering with purpose.</h2>
-        <p class="section-intro">
-          With more than a decade of experience in enterprise
-          web development, I work at the intersection of
-          software engineering, content strategy, and marketing
-          technology. My focus is on solving complex technical
-          challenges while delivering practical business value.
-        </p>
-      </div>
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <div class="eyebrow">02 / Selected Work</div>
-        <h2>Featured Projects</h2>
-        <p class="section-intro">
-          A selection of enterprise web platforms, content
-          architectures, and digital experiences I've helped build.
-        </p>
-
-        <div class="projects">
-
-          <article class="card">
-            <div class="label">Digital Experience / CMS</div>
-            <h3>Tealium — Resource Center & Demo Hub</h3>
-            <p>
-              Structured content architecture, custom WordPress
-              functionality, dynamic filtering, and reusable
-              digital experience components.
-            </p>
-            <div class="tags">
-              <span class="tag">WordPress</span>
-              <span class="tag">PHP</span>
-              <span class="tag">ACF</span>
-              <span class="tag">JavaScript</span>
-            </div>
-            <a href="https://tealium.com/"
-               target="_blank" rel="noopener noreferrer">
-              Visit Website &rarr;
-            </a>
-          </article>
-
-          <article class="card">
-            <div class="label">Enterprise Web Engineering</div>
-            <h3>ICW Group — Corporate Web Platform</h3>
-            <p>
-              Enterprise WordPress development, custom integrations,
-              content architecture, deployment workflows,
-              and technical SEO.
-            </p>
-            <div class="tags">
-              <span class="tag">WordPress</span>
-              <span class="tag">AWS</span>
-              <span class="tag">PHP</span>
-              <span class="tag">GitHub</span>
-            </div>
-            <a href="https://www.icwgroup.com/"
-               target="_blank" rel="noopener noreferrer">
-              Visit Website &rarr;
-            </a>
-          </article>
-
-          <article class="card">
-            <div class="label">Enterprise Web / MarTech</div>
-            <h3>ScienceLogic — Corporate Website</h3>
-            <p>
-              Enterprise website development, content management,
-              marketing technology integrations, and digital
-              experience optimization.
-            </p>
-            <div class="tags">
-              <span class="tag">WordPress</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">Analytics</span>
-              <span class="tag">MarTech</span>
-            </div>
-            <a href="https://sciencelogic.com/"
-               target="_blank" rel="noopener noreferrer">
-              Visit Website &rarr;
-            </a>
-          </article>
-
-          <article class="card">
-            <div class="label">Frontend / Technical Documentation</div>
-            <h3>Tealium — Documentation Platform</h3>
-            <p>
-              Theme enhancements, complex content rendering,
-              frontend troubleshooting, and improvements to
-              documentation presentation.
-            </p>
-            <div class="tags">
-              <span class="tag">HTML</span>
-              <span class="tag">CSS</span>
-              <span class="tag">JavaScript</span>
-              <span class="tag">Git</span>
-            </div>
-            <a href="https://docs.tealium.com/"
-               target="_blank" rel="noopener noreferrer">
-              Visit Documentation &rarr;
-            </a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <section id="expertise">
-      <div class="container">
-        <div class="eyebrow">03 / Technical Expertise</div>
-        <h2>What I Work With</h2>
-
-        <div class="skills">
-          <div>
-            <h3>Web Engineering</h3>
-            <p>
-              PHP, JavaScript, HTML, CSS, REST APIs,
-              custom integrations, frontend development,
-              and application troubleshooting.
-            </p>
-          </div>
-
-          <div>
-            <h3>CMS & Platforms</h3>
-            <p>
-              WordPress, Webflow, SharePoint,
-              Advanced Custom Fields, Elementor,
-              and enterprise content architecture.
-            </p>
-          </div>
-
-          <div>
-            <h3>Digital Experience</h3>
-            <p>
-              Technical SEO, GA4, analytics,
-              marketing automation, content strategy,
-              conversion optimization, and MarTech.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <div class="container">
-        <div class="eyebrow">04 / Connect</div>
-        <h2>Let's build something that works.</h2>
-        <p class="section-intro">
-          Interested in enterprise web engineering,
-          digital experience consulting, or technical collaboration?
-        </p>
-        <a class="button primary"
-           href="https://github.com/tonka717"
-           target="_blank" rel="noopener noreferrer">
-          View My GitHub
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
+    <h1>
+     I want to change the world. I just happen to know how to code.
+    </h1>
+    <p>
+     I'm Crystal Williams &mdash; a strategist, software engineer, entrepreneur, creative thinker and relentlessly curious problem-solver.
+    </p>
+    <p>
+     I connect people, ideas, technology and business to solve complex problems and create meaningful change.
+    </p>
+    <p>
+     Sometimes the answer is technology. Sometimes it's a better process, a different perspective, a creative idea or simply asking the question nobody else has thought to ask.
+    </p>
+    <p>
+     I believe the best solutions aren't always the most sophisticated. They're the ones that make things better.
+    </p>
+    <div class="manifesto">
+     Challenge Convention. Connect the Dots. Create Change.
+    </div>
+    <div class="buttons">
+     <a class="button primary" href="#projects">
+      Explore My Work
+     </a>
+     <a class="button" href="#about">
+      Get to Know Me
+     </a>
+    </div>
+   </div>
+   <section id="about">
     <div class="container">
-      &copy; <span id="year">2026</span> Crystal Williams.
-      Built with HTML &amp; CSS. Hosted on GitHub Pages.
+     <div class="eyebrow">
+      01 / My Story
+     </div>
+     <h2>
+      Curiosity is my superpower.
+     </h2>
+     <div class="copy">
+      <p>
+       I've spent more than two decades exploring how people, businesses, technology and ideas work together &mdash; and what happens when they don't.
+      </p>
+      <p>
+       My career hasn't followed a traditional path, and I'm grateful for that. From military service, healthcare and entrepreneurship to marketing strategy and enterprise software engineering, every experience has shaped how I see the world.
+      </p>
+      <p>
+       I've worked with government agencies, global technology companies, large enterprises, universities and small businesses. Regardless of the industry, I find myself asking the same questions:
+      </p>
+      <p class="manifesto">
+       Why are we doing it this way? Who are we solving this for? What are we missing? And how can we make it better?
+      </p>
+      <p>
+       I'm equally comfortable discussing brand strategy, analyzing business processes, designing digital experiences, architecting enterprise solutions or sitting down and writing code.
+      </p>
+      <p>
+       I'm passionate about emerging technology, but I don't believe technology is the answer to everything. I believe in human creativity, collaboration, critical thinking and the extraordinary things people can accomplish when given the right tools and opportunities.
+      </p>
+      <p>
+       I'm not afraid to challenge assumptions, admit what I don't know or ask the seemingly obvious question.
+      </p>
+      <p>
+       I want to leave things better than I found them. And if I can change a little piece of the world along the way, even better.
+      </p>
+     </div>
     </div>
+   </section>
+   <section id="projects">
+    <div class="container">
+     <div class="eyebrow">
+      02 / Making an Impact
+     </div>
+     <h2>
+      Different industries. Different challenges. One endlessly curious mind.
+     </h2>
+     <div class="projects">
+      <article class="card">
+       <div class="label">
+        Billion-Dollar Insurance Enterprise
+       </div>
+       <h3>
+        Rethinking the Enterprise Digital Ecosystem
+       </h3>
+       <p>
+        Enterprise platform engineering, security, content governance and modernization initiatives that balance operational resilience with marketing autonomy.
+       </p>
+       <div class="tags">
+        <span class="tag">
+         Architecture
+        </span>
+        <span class="tag">
+         Security
+        </span>
+        <span class="tag">
+         Governance
+        </span>
+       </div>
+      </article>
+      <article class="card">
+       <div class="label">
+        Global Enterprise SaaS Company
+       </div>
+       <h3>
+        Connecting Marketing, Data &amp; Technology
+       </h3>
+       <p>
+        Content architecture, resource discovery, demo experiences and reusable components designed around customer journeys.
+       </p>
+       <div class="tags">
+        <span class="tag">
+         Marketing
+        </span>
+        <span class="tag">
+         Customer Experience
+        </span>
+        <span class="tag">
+         CMS
+        </span>
+       </div>
+      </article>
+      <article class="card">
+       <div class="label">
+        Enterprise AI &amp; IT Operations Company
+       </div>
+       <h3>
+        Supporting Global Brand Growth
+       </h3>
+       <p>
+        Corporate digital strategy, campaign enablement, marketing technology integrations and analytics.
+       </p>
+       <div class="tags">
+        <span class="tag">
+         Brand
+        </span>
+        <span class="tag">
+         Demand Generation
+        </span>
+        <span class="tag">
+         MarTech
+        </span>
+       </div>
+      </article>
+      <article class="card">
+       <div class="label">
+        Global Technology Company
+       </div>
+       <h3>
+        Making Complex Information Easier to Use
+       </h3>
+       <p>
+        Technical knowledge platforms, complex content rendering and frontend improvements.
+       </p>
+       <div class="tags">
+        <span class="tag">
+         Information Architecture
+        </span>
+        <span class="tag">
+         Documentation
+        </span>
+       </div>
+      </article>
+      <article class="card">
+       <div class="label">
+        Enterprise &amp; Government Organizations
+       </div>
+       <h3>
+        Modernizing How People Work
+       </h3>
+       <p>
+        Collaboration platforms, knowledge management and workflow automation that simplify everyday operations.
+       </p>
+       <div class="tags">
+        <span class="tag">
+         Microsoft 365
+        </span>
+        <span class="tag">
+         Process Improvement
+        </span>
+       </div>
+      </article>
+      <article class="card">
+       <div class="label">
+        Federal Government &amp; Higher Education
+       </div>
+       <h3>
+        Technology in Service of the Public
+       </h3>
+       <p>
+        Public-facing digital experiences, enterprise web solutions and information delivery.
+       </p>
+       <div class="tags">
+        <span class="tag">
+         Public Service
+        </span>
+        <span class="tag">
+         Web Engineering
+        </span>
+       </div>
+      </article>
+      <article class="card">
+       <div class="label">
+        Entrepreneurship &amp; Small Business
+       </div>
+       <h3>
+        Building Something from Nothing
+       </h3>
+       <p>
+        Business development, consulting, brand development and creative problem-solving.
+       </p>
+       <div class="tags">
+        <span class="tag">
+         Strategy
+        </span>
+        <span class="tag">
+         Entrepreneurship
+        </span>
+       </div>
+      </article>
+     </div>
+    </div>
+   </section>
+   <section id="expertise">
+    <div class="container">
+     <div class="eyebrow">
+      03 / Expertise
+     </div>
+     <h2>
+      More than a toolkit.
+     </h2>
+     <p class="section-intro">
+      The disciplines I draw on to solve the right problem, not just the technical one.
+     </p>
+     <div class="skills">
+      <div>
+       <h3>
+        Business &amp; Innovation
+       </h3>
+       <p>
+        Systems thinking, strategic planning, process improvement, digital transformation.
+       </p>
+      </div>
+      <div>
+       <h3>
+        Marketing &amp; Growth
+       </h3>
+       <p>
+        B2B marketing, brand strategy, lead generation, demand generation and campaign enablement.
+       </p>
+      </div>
+      <div>
+       <h3>
+        Creative &amp; Digital Experience
+       </h3>
+       <p>
+        Storytelling, user experience, content strategy, customer journeys and design systems.
+       </p>
+      </div>
+      <div>
+       <h3>
+        Engineering &amp; Architecture
+       </h3>
+       <p>
+        Enterprise platforms, PHP, JavaScript, REST APIs, cloud environments, CMS architecture and integrations.
+       </p>
+      </div>
+      <div>
+       <h3>
+        Data &amp; Intelligence
+       </h3>
+       <p>
+        Analytics, customer data platforms, SEO and conversion optimization.
+       </p>
+      </div>
+      <div>
+       <h3>
+        AI &amp; Emerging Technology
+       </h3>
+       <p>
+        AI-assisted development, automation and human enablement.
+       </p>
+      </div>
+      <div>
+       <h3>
+        People &amp; Operations
+       </h3>
+       <p>
+        Knowledge management, collaboration, governance and cross-functional alignment.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section id="milestones">
+    <div class="container">
+     <div class="eyebrow">
+      04 / Milestones
+     </div>
+     <h2>
+      Milestones Along the Way
+     </h2>
+     <div class="skills">
+      <div>
+       <h3>
+        Military Service
+       </h3>
+       <p>
+        U.S. Army veteran.
+       </p>
+      </div>
+      <div>
+       <h3>
+        Entrepreneurship
+       </h3>
+       <p>
+        Founder and principal consultant of a veteran- and woman-owned business.
+       </p>
+      </div>
+      <div>
+       <h3>
+        Professional Development
+       </h3>
+       <p>
+        Program Management for IT Professionals and Project Management Foundations.
+       </p>
+      </div>
+      <div>
+       <h3>
+        Healthcare Roots
+       </h3>
+       <p>
+        Ophthalmic technician training at Johns Hopkins University.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section id="perspectives">
+    <div class="container">
+     <div class="eyebrow">
+      05 / Perspectives
+     </div>
+     <h2>
+      A few things I believe.
+     </h2>
+     <div class="copy">
+      <p class="manifesto">
+       Technology should empower people, not diminish them.
+      </p>
+      <p class="manifesto">
+       Innovation doesn't always require invention. Sometimes it requires simplification.
+      </p>
+      <p class="manifesto">
+       Creativity is not a problem artificial intelligence needs to solve.
+      </p>
+      <p class="manifesto">
+       The best ideas don't always come from the person with the highest title.
+      </p>
+      <p class="manifesto">
+       A good question can be more valuable than a thousand lines of code.
+      </p>
+      <p class="manifesto">
+       Never confuse complexity with intelligence.
+      </p>
+      <p class="manifesto">
+       Success should be measured by what we make better, not just what we make.
+      </p>
+      <p class="manifesto">
+       And yes, I still believe we can change the world.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section id="contact">
+    <div class="container">
+     <div class="eyebrow">
+      06 / Connect
+     </div>
+     <h2>
+      Let's make something better.
+     </h2>
+     <p class="section-intro">
+      Have a complex problem, a bold idea or a mission worth pursuing? I'd love to connect with people who believe we can make a meaningful difference.
+     </p>
+     <div class="buttons">
+      <a class="button primary" href="https://www.linkedin.com/in/williamscrystal/" rel="noopener noreferrer" target="_blank">
+       Connect on LinkedIn
+      </a>
+      <a class="button" href="https://github.com/tonka717" rel="noopener noreferrer" target="_blank">
+       View My GitHub
+      </a>
+     </div>
+    </div>
+   </section>
+  </main>
+  <footer>
+   <div class="container">
+    &copy;
+    <span id="year">
+     2026
+    </span>
+    Crystal Williams. Built with curiosity and code.
+   </div>
   </footer>
-
   <script>
-    document.getElementById("year").textContent =
-      new Date().getFullYear();
+   document.getElementById("year").textContent = new Date().getFullYear();
   </script>
-
-</body>
+ </body>
 </html>
-
